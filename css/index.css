@@ -64,7 +64,220 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
-/* mobile layout here ********************************************************/
+
+/* desktop layout here ***********************/
+.container {
+	display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+.nav	{
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	margin-bottom: 80px;
+	font-size: large;
+	width: 100%;
+}
+
+.nav a {
+	margin-left: 40px;
+	margin-top: 30px;
+	color: gray;
+	text-decoration: none;	
+}
+
+.nav img {
+	display: flex;
+	margin-left: 100px;
+	margin-top: 30px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.box-a {
+	display: flex;
+    flex-direction: column;
+    width: 50%;
+    flex-wrap: nowrap;
+	align-items: center;
+}
+
+header h1 {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    letter-spacing: 1.5px;
+    font-size: 85px;
+    text-align: center;
+
+}
+	
+button {
+
+	display: flex;
+    justify-content: center;
+    width: 150px;
+    background: white;
+    border: solid 1px;
+    letter-spacing: .5pt;
+	font-size: medium;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.box-b {
+	display: flex;
+    flex-direction: column;
+	flex-wrap: nowrap;
+	margin-left: auto;
+}	
+
+/* .header-img {
+	display: flex;
+	margin-right: 30px
+} */
+
+.top-content {
+	/* column-count: 2; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.top-content .features {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	width: 50%;
+}
+
+.top-content .about {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 50%;
+
+}
+
+.middle-img {
+	display: flex;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+/* .bottom-content {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: flex-start;
+} */
+
+.bottom-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+	margin-top: 30px;
+	justify-content: space-evenly;
+	/* border: 1px solid red; */
+}
+
+.bottom-content .services {
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+	width: 30%;
+}
+
+.bottom-content .product {
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+	width: 30%;
+}
+
+.bottom-content .vision {
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+	width: 30%;
+}
+
+hr {
+	display: flex;
+	flex-wrap: nowrap;
+    color: black;
+    height: 1px;
+    width: 100%;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	margin-top: 30px;
+	width: 30%;
+}
+
+.info .street {
+	display: flex;
+	flex-direction: column;
+	line-height: 1;
+}
+.info .phone {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	/* margin-bottom: 20px; */
+}
+
+.info .email {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	margin-top: 75px;
+    text-align: center;
+}
+
+/* tablet layout here ****************/
+@media (max-width: 800px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    body .box-b {
+    display: none;
+    flex-direction: column;
+    }
+}
+
+/* mobile layout here ************************/
 @media(max-width: 500px) {
 
     .container {
@@ -279,222 +492,4 @@ h1, h2, h3, h4, h5 {
     }
 
 }
-}
-
-/* tablet layout here **************************************************/
-/* @media(max-width: 800px) {
-
-    .container {
-        display: flex;
-        flex-direction: column;
-    }
-} */
-
-/* desktop layout here **************************************************/
-.container {
-	display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-	width: 900px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.img {
-    width: 100%;
-    height: auto;
-}
-
-.nav	{
-	display: flex;
-	flex-direction: row;
-	align-items: baseline;
-	margin-bottom: 80px;
-	font-size: large;
-	width: 100%;
-}
-
-.nav a {
-	margin-left: 40px;
-	margin-top: 30px;
-	color: gray;
-	text-decoration: none;	
-}
-
-.nav img {
-	display: flex;
-	margin-left: 100px;
-	margin-top: 30px;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-	flex-wrap: nowrap;
-	align-items: center;
-	margin-bottom: 40px;
-}
-
-/* display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    margin-bottom: 40px;
-    width: 95%; */
-
-.box-a {
-	display: flex;
-    flex-direction: column;
-    width: 50%;
-    flex-wrap: nowrap;
-	align-items: center;
-}
-
-header h1 {
-    display: flex;
-    flex-direction: column;
-    width: 65%;
-    letter-spacing: 1.5px;
-    font-size: 85px;
-    text-align: center;
-
-}
-	
-button {
-
-	display: flex;
-    justify-content: center;
-    width: 150px;
-    background: white;
-    border: solid 1px;
-    letter-spacing: .5pt;
-	font-size: medium;
-	font-family: 'Titillium Web', sans-serif;
-}
-
-.box-b {
-	display: flex;
-    flex-direction: column;
-	flex-wrap: nowrap;
-	margin-left: auto;
-}	
-
-/* .header-img {
-	display: flex;
-	margin-right: 30px
-} */
-
-.main-content {
-
-}
-
-.top-content {
-	/* column-count: 2; */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-    margin-top: 30px;
-}
-
-.top-content .features {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	width: 50%;
-}
-
-.top-content .about {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	width: 50%;
-
-}
-
-.middle-img {
-	display: flex;
-	width: 100%;
-	margin-bottom: 30px;
-}
-
-/* .bottom-content {
-	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-	justify-content: flex-start;
-} */
-
-.bottom-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-	margin-top: 30px;
-	justify-content: space-evenly;
-	/* border: 1px solid red; */
-}
-
-.bottom-content .services {
-	display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-	width: 30%;
-}
-
-.bottom-content .product {
-	display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-	width: 30%;
-}
-
-.bottom-content .vision {
-	display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-	width: 30%;
-}
-
-hr {
-	display: flex;
-	flex-wrap: nowrap;
-    color: black;
-    height: 1px;
-    width: 100%;
-}
-
-.info {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	align-items: flex-start;
-	margin-top: 30px;
-	width: 30%;
-}
-
-.info .street {
-	display: flex;
-	flex-direction: column;
-	line-height: 1;
-}
-.info .phone {
-	display: flex;
-	flex-direction: column;
-	margin-top: 10px;
-	/* margin-bottom: 20px; */
-}
-
-.info .email {
-	display: flex;
-	flex-direction: column;
-	margin-top: 10px;
-}
-
-.footer {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	margin-top: 75px;
-    text-align: center;
 }
