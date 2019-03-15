@@ -30,5 +30,30 @@ Follow these steps for completing your project.
 * [ ] Create a tablet and mobile version of the services page from previous projects
 * [ ] Once you have completed the project with max-width media queries, start over with min-width media queries to get a feel for how a mobile first approach would be like.  I recommend making a copy of all your contents in a new folder named "mobile-first" to keep it separate
 
+<!-- Features of Fixed Layout
+Design is usually desktop only
+CSS widths are usually hard coded pixels
+Horizontal scroll bars appear as the viewport shrinks smaller than the website’s design
+No media queries are used
+Quicker deployment -->
+
+<!-- Features of Fluid Layout
+Design is often divided among desktop, tablet, or phone
+Percent based units instead of hard coded pixels
+Everything is designed to proportionally shrink
+No media queries are used -->
+
+<!-- Features of Adaptive Layout
+Design is often divided among desktop, tablet, or phone
+Media queries are used
+Layout widths are still hard coded at each media query
+Quick deployment for specific devices -->
+
+<!-- Features of Responsive Layout
+Design is often divided among desktop, tablet, or phone
+Responsive units are used throughout the site
+Media queries are used
+Site accommodates thousands of devices and takes longer to build -->
+
 
 
